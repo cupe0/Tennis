@@ -1,0 +1,37 @@
+@model Abbo
+
+<h2>Create Abbo</h2>
+
+<form asp-action="Index" method="post" class="table">
+    <p>
+        <label asp-for="StartDate">Von: </label>
+        <input asp-for="StartDate">
+    </p>
+
+    <p>
+        <label asp-for="EndDate">Bis: </label>
+        <input asp-for="EndDate">
+    </p>
+
+    <p>
+        <label asp-for="GroupInput">Spieler: </label>
+        <input asp-for="GroupInput">
+    </p>
+
+    <p>
+        <label asp-for="ReservationDayInput">Reservation days: </label>
+        <input asp-for="ReservationDayInput">
+    </p>
+    
+    <p>
+        <label asp-for="NumberOfSingleGamesInput">Number of single games: </label>
+        <input asp-for="NumberOfSingleGamesInput">
+    </p>
+    
+    <p>
+        <label asp-for="NumberOfDoubleGamesInput">Number of double games: </label>
+        <input asp-for="NumberOfDoubleGamesInput">
+    </p>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
